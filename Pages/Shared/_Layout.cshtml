@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bayev</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+
+
+    <title>Bayev</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="~/vendor/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="~/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet" />
+    <link href="~/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- ======= Navbar ======= -->
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+        <div class="container py-2 py-md-5">
+            <div class="row align-items-start">
+                <div class="col-md-2">
+                    <ul class="custom-menu">
+                        <li class="active"><a asp-page="Index">Home</a></li>
+                        <li><a asp-page="about">About Me</a></li>
+                        <li><a asp-page="services">Services</a></li>
+                        <li><a asp-page="work">Works</a></li>
+                        <li><a asp-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-4 d-none d-md-block">
+                    <h3>Hire Me</h3>
+                    <p>A self-motivated individual with a strong understanding of the web development process. A passionate developer who loves problem solving. Looking for growth opportunities to try new technologies and grow my technical skill set in a team-based atmosphere. <br> <a href="#">azamat.bayev1@gmail.com</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" asp-page="Index">A. Bayev</a>
+
+            <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
+
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Bayev's Portfolio
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
